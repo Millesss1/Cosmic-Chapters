@@ -1,0 +1,191 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  text-align: center;
+  margin: 30px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 500px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #3498db;
+}
+
+/* List Section */
+.list-section {
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.list-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+}
+
+/* List Styling */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 28%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.item-details {
+  padding: 10px;
+}
+
+.item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+
+.item p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.item p strong {
+  color: #2c3e50;
+}
+
+/* Personal Review Section */
+.item .personal-review {
+  margin-top: 15px;
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .item {
+    width: 45%;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .list-section h2 {
+    font-size: 2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}

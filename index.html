@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal List of Anime, Manga, and Books</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Personal List</h1>
+    <p>Anime, Manga, and Books to Explore!</p>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search items..." onkeyup="searchItems()">
+  </div>
+
+  <!-- Anime Section -->
+  <section id="anime" class="list-section">
+    <h2>Anime List</h2>
+    <input type="text" id="animeFilter" placeholder="Filter by genre..." onkeyup="filterItems('anime')">
+    <div class="list" id="animeList">
+      <!-- Example Item -->
+      <div class="item anime-item">
+        <img src="anime-cover.jpg" alt="Anime Cover">
+        <div class="item-details">
+          <h3>Title: Attack on Titan</h3>
+          <p><strong>Alternative Name:</strong> Shingeki no Kyojin</p>
+          <p><strong>Status:</strong> Ongoing</p>
+          <p><strong>Genres:</strong> Action, Drama, Fantasy</p>
+          <p><strong>Rating:</strong> 9.5/10</p>
+          <p><strong>Year:</strong> 2013</p>
+          <p><strong>Chapters:</strong> 139</p>
+          <p><strong>Type:</strong> TV Series</p>
+          <p><strong>Synopsis:</strong> Humanity fights for survival against giant humanoid creatures known as Titans.</p>
+          <p><strong>Related Series:</strong> Attack on Titan: Lost Girls</p>
+          <p><strong>Author:</strong> Hajime Isayama</p>
+          <p><strong>Personal Review:</strong> One of the best action-packed series with deep themes and an amazing storyline.</p>
+        </div>
+      </div>
+      <!-- More items can be added here -->
+    </div>
+  </section>
+
+  <!-- Manga Section -->
+  <section id="manga" class="list-section">
+    <h2>Manga List</h2>
+    <input type="text" id="mangaFilter" placeholder="Filter by genre..." onkeyup="filterItems('manga')">
+    <div class="list" id="mangaList">
+      <!-- Example Item -->
+      <div class="item manga-item">
+        <img src="manga-cover.jpg" alt="Manga Cover">
+        <div class="item-details">
+          <h3>Title: Naruto</h3>
+          <p><strong>Alternative Name:</strong> Naruto: Uzumaki</p>
+          <p><strong>Status:</strong> Completed</p>
+          <p><strong>Genres:</strong> Action, Adventure, Ninja</p>
+          <p><strong>Rating:</strong> 8.5/10</p>
+          <p><strong>Year:</strong> 1999</p>
+          <p><strong>Chapters:</strong> 700</p>
+          <p><strong>Type:</strong> Manga</p>
+          <p><strong>Synopsis:</strong> Follows Naruto Uzumaki, a young ninja, as he strives to become the strongest ninja and leader of his village.</p>
+          <p><strong>Related Series:</strong> Boruto: Naruto Next Generations</p>
+          <p><strong>Author:</strong> Masashi Kishimoto</p>
+          <p><strong>Personal Review:</strong> A classic that helped shape the modern shonen genre. Incredible character development and action.</p>
+        </div>
+      </div>
+      <!-- More items can be added here -->
+    </div>
+  </section>
+
+  <!-- Book Section -->
+  <section id="books" class="list-section">
+    <h2>Book List</h2>
+    <input type="text" id="bookFilter" placeholder="Filter by genre..." onkeyup="filterItems('books')">
+    <div class="list" id="bookList">
+      <!-- Example Item -->
+      <div class="item book-item">
+        <img src="book-cover.jpg" alt="Book Cover">
+        <div class="item-details">
+          <h3>Title: 1984</h3>
+          <p><strong>Alternative Name:</strong> Nineteen Eighty-Four</p>
+          <p><strong>Status:</strong> Completed</p>
+          <p><strong>Genres:</strong> Dystopia, Political Fiction</p>
+          <p><strong>Rating:</strong> 9.2/10</p>
+          <p><strong>Year:</strong> 1949</p>
+          <p><strong>Chapters:</strong> 24</p>
+          <p><strong>Type:</strong> Novel</p>
+          <p><strong>Synopsis:</strong> A dystopian novel set in a totalitarian society ruled by Big Brother, focusing on surveillance and personal freedom.</p>
+          <p><strong>Related Series:</strong> N/A</p>
+          <p><strong>Author:</strong> George Orwell</p>
+          <p><strong>Personal Review:</strong> A chilling and thought-provoking novel that feels relevant even in modern times.</p>
+        </div>
+      </div>
+      <!-- More items can be added here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Personal List of Anime, Manga, and Books</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
